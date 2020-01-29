@@ -19,7 +19,7 @@ public class Book {
 			
 			for(int i=0; i<book.length; i++) {
 				System.out.print("Á¦¸ñ>>");
-				book.title = input.nextLine();
+				book.title = input.nextLine(); // book.°¡ ¿Ö ¾È¸ÔÈú±î?
 				System.out.print("ÀúÀÚ>>");
 				book.author = input.nextLine();
 				
