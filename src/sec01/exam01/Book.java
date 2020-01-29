@@ -34,7 +34,7 @@ public class Book {
 			for(int i=0; i<book.length; i++) {
 				System.out.print(book[i].title +", "+ book[i].author + ", ");
 			
-				input.close();
+				input.close(); //¿¬½ÀÄ¿¹Ô
 			}
 		
 		}
