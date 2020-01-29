@@ -4,7 +4,8 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class Book {
-		
+		//203í˜ì´ì§€
+	
 		static Scanner input = new Scanner(System.in);
 	
 		static String title, author;
@@ -18,11 +19,11 @@ public class Book {
 			Book[] book = new Book[2];
 			
 			for(int i=0; i<book.length; i++) {
-				System.out.print("Á¦¸ñ>>");
+				System.out.print("ì œëª©>>");
 				Book.title = input.nextLine();
-				System.out.print("ÀúÀÚ>>");
+				System.out.print("ì €ì>>");
 				Book.author = input.nextLine();
-				book[i] = new Book(title,author);
+				book[i] = new Book(title,author); //ë°°ì—´ ì›ì†Œ ê°ì²´ ìƒì„±
 			}
 			
 			for(int i=0; i<book.length; i++) {
