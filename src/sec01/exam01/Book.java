@@ -19,9 +19,9 @@ public class Book {
 			
 			for(int i=0; i<book.length; i++) {
 				System.out.print("제목>>");
-				String title = input.nextLine();
+				book.title = input.nextLine();
 				System.out.print("저자>>");
-				String author = input.nextLine();
+				book.author = input.nextLine();
 				
 				book[i] = new Book(title, author);
 			}
