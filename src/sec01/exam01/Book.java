@@ -23,23 +23,23 @@ public class Book {
 			BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 			
 			
-			Book[] book = new Book[2]; //레퍼런스를 2개 생성
+			Book[] book = new Book[2]; //레퍼런스를 2개 생성 (여기서는 객체가 생성된것이 아님)
 			
 			for(int i=0; i<book.length; i++) {
 
 				System.out.print("제목>>");
-				String title = br.readLine(); //입력 변수, 필드값과 독립적?
+				String title = br.readLine(); // 클래스,인스턴스멤버와는 별개의 변수값
 				System.out.print("저자>>");
 				String author = br.readLine();
 				
-				book[i] = new Book(title, author); //전달 인자값을 여기서 생성
+				book[i] = new Book(title, author); //객체를 여기서 생성, 그럼 배열로 생성된 객체는 같은 객체인가?
 
 			}
 			
 			for(int i=0; i<book.length; i++) {
 				System.out.print(book[i].title +", "+ book[i].author + ", ");
 			
-				br.close(); //연습커밋
+				br.close();
 			}
 		
 		}
