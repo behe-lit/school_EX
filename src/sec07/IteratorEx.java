@@ -22,7 +22,7 @@ public class IteratorEx {
 		
 		
 		int sum =0;
-		it = v.iterator(); //재선언 해야하는 이유 ??
+		it = v.iterator(); //재선언 해야하는 이유 ???
 		while(it.hasNext()) {
 			int n = it.next();
 			sum+=n;
